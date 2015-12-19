@@ -1,9 +1,17 @@
-{% if recipient_list %}
-  <ul>
-    {% for recipient in recipient_list %}
-    <li><a href="{% url 'cards:detail' recipient.id %}">{{ recipient.first_name }} {{ recipient.last_name }}</a></li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>No recipients are available.</p>
-{% endif %}
+{% extends "base.html" %}
+
+{% block title %}Matt &amp; Sarah's Christmas Page{% endblock %}
+
+{% block content %}
+  {% if recipient_list %}
+    <ul>
+      {% for recipient in recipient_list %}
+        <li>
+          <a href="{% url 'cards:detail' recipient.id %}">{{ recipient.first_name }} {{ recipient.last_name }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No recipients are available.</p>
+  {% endif %}
+{% endblock content %}
