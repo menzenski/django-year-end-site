@@ -1,6 +1,12 @@
 # local files
 db.sqlite3
 
+# actual pictures of us
+cards/static/cards/images/
+
+# .swp files
+*.html.swp
+
 *.egg-info
 *.pot
 *.py[co]
