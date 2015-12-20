@@ -4,6 +4,9 @@ db.sqlite3
 # actual pictures of us
 cards/static/cards/images/
 
+# detail.html now includes a personal Christmas letter
+cards/templates/cards/detail.html
+
 # .swp files
 *.html.swp
 

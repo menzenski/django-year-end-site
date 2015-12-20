@@ -6,3 +6,34 @@ body {
   background-color: #A41E22;
   color: #F3EEC7;
 }
+
+a:link {
+  color: #F3EEC7;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #F3EEC7;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #A41E22;
+  text-decoration: none;
+  background-color: #F3EEC7;
+}
+
+a:active {
+  color: #A41E22;
+  text-decoration: underline;
+  background-color: #F3EEC7;
+}
+
+img.displayed {
+  display: block;
+  max-width: 75%;
+  max-height: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+}

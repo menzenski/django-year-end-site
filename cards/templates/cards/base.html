@@ -22,9 +22,15 @@
 
       <div class="row">
 
-        <div class="two columns"></div>
+        <div class="one column"></div>
 
-        <div class="eight columns" style="margin-top: 10%;">
+        <div class="ten columns" style="margin-top: 10%;">
+          {% block pageheading %}
+          {% endblock pageheading %}
+
+          {% block photo %}
+          {% endblock photo %}
+
           {% block content %}
           {% endblock content %}
 
@@ -33,7 +39,7 @@
           {% endblock footer %}
         </div>
 
-        <div class="two columns"></div>
+        <div class="one column"></div>
       </div>
    </div>
   </body>
