@@ -6,16 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
+    <link rel="stylesheet" type="text/css" href="{% static 'cards/css/normalize.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'cards/css/skeleton.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'cards/css/style.css' %}" />
+    {% block scripts %}
+    {% endblock scripts %}
+
     {% block header %}
     <title>{% block title %}Merry Christmas from Matt &amp; Sarah!{% endblock %}</title>
     {% endblock header %}
   </head>
   <body>
-    {% block content %}
-    {% endblock content %}
+    {% block snowcanvas %}{% endblock snowcanvas %}
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns" style="margin-top: 10%;">
+          {% block content %}
+          {% endblock content %}
+        </div>
+      </div>
 
-    <p>&copy; 2015 <a href="https://github.com/menzenski/django-year-end-site">Matthew Menzenski</a>.</p>
-    {% block scripts %}
-    {% endblock scripts %}
+      <div class="row">
+        <div class="twelve columns">
+          <p>&copy; 2015 <a href="https://github.com/menzenski/django-year-end-site">Matthew Menzenski</a>.</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

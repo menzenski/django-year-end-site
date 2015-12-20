@@ -1,0 +1,8 @@
+/* Blue #6EBDA6, text on it #F6FDFF
+ * Red #A41E22, text on it #F3EEC7
+ * Green #83A931, text on it #0C3720
+ */
+body {
+  background-color: #A41E22;
+  color: #F3EEC7;
+}
